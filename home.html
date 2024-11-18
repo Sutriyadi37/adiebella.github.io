@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Adi & bella</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <audio autoplay>
+      <source src="JUMPA RAS ATE NGENA Iche Br Ginting.mp3" type="audio/mp3">
+    </audio>
+
+    <section id="home" class="home">
+      <div class="container text-white">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <h1>Acara Pernikahan</h1>
+            <p>Diselenggarakan di Medan, Sumatera Utara.</p>
+            <p>
+              Dengan segala hormat, kami bermaksud mengundang
+              Bapak/Ibu/Saudara/i untuk hadir pada acara pernikahan kami.
+            </p>
+
+            <h3>Nama Mempelai</h3>
+            <h2>Sutriyadi Yusuf Sumarno</h2>
+            <p>
+              Anak ketiga dari enam bersaudara, Putra dari Bapak Sumarno dan Ibu
+              Jumiatun.
+            </p>
+            <h2>Isabella Kristin BR. Pinem, A.Md.,Par.</h2>
+            <p>
+              Anak ke empat dari lima bersaudara, Putri dari Bapak Drs. Pengeri
+              Pinem <strong>(♰)</strong> dan Ibu Drs. Ruth Wallerina Triscova Br. Manalu
+            </p>
+            <p>
+              Semoga kehadiran Bapak/Ibu/Saudara/i menjadi berkah bagi
+              pernikahan kami.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="info" class="info">
+      <div class="container text-white">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>
+              <strong
+                >Informasi Acara Pemberkata Tanggal 28 November 2024</strong
+              >
+            </h2>
+            <p class="alamat">
+              Alamat: Gedung Gereja GBKP RG. BAMBU RAYA SIMALINGKAR. <br />Jl.
+              Bambu Raya, Mangga, Kec. Medan Tuntungan, Kota Medan, Sumatera
+              Utara 20141
+            </p>
+            <a
+              href="https://maps.app.goo.gl/Lz2AYtzhU3VcapDu8"
+              target="_blank"
+              class="btn btn-light btn-sm"
+              >Klik untuk membuka peta</a
+            >
+          </div>
+          <div class="col-md-8 col-10 text-center">
+            <h3>
+              <strong>Informasi Acara Adat Tanggal 29 November 2024</strong>
+            </h3>
+            <p class="alamat">
+              Alamat: Jambur Tamsaka. <br />Jl. Jamin Ginting No.KM.11, RW.5,
+              Kemenangan Tani, Kec. Medan Tuntungan, Kota Medan, Sumatera Utara
+              20135
+            </p>
+            <a
+              href="https://maps.app.goo.gl/WSuRMNMYhU7wmYnL6"
+              target="_blank"
+              class="btn btn-light btn-sm"
+              >Klik untuk membuka peta</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="kehadiranForm" class="kehadiranForm">
+      <div class="container">
+        <form 
+        method="POST" 
+        action="https://script.google.com/macros/s/AKfycbzi7_PpQZci_Oys7y7id1HVXyJ6yptllT8Qv24-p_UZkW6gyYOkopOVrY4wSLLxKwXk/exec" id="my-form"
+      >
+        <h1>Ucapan & Kehadiran</h1>
+        <form id="kehadiranForm">
+          <div class="form-group">
+            <label for="nama">Nama</label>
+            <input
+              type="text"
+              id="nama"
+              name="nama"
+              placeholder="Masukkan nama Anda"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="pesan">Ucapan</label>
+            <textarea
+              id="pesan"
+              name="pesan"
+              placeholder="Tuliskan ucapan Anda"
+              required
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <label for="kehadiran">Konfirmasi Kehadiran</label>
+            <select id="kehadiran" name="kehadiran" required>
+              <option value="" disabled selected>Pilih</option>
+              <option value="Hadir">Hadir</option>
+              <option value="Tidak Hadir">Tidak Hadir</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <button type="submit">Kirim</button>
+          </div>
+        </form>
+
+        <div class="messages" id="messages">
+          <!-- Ucapan tamu akan ditampilkan di sini -->
+        </div>
+      </div>
+    </section>
+
+    <section id="gift" class="gift">
+      <div class="container text-center">
+        <h2>Informasi Hadiah</h2>
+        <p>
+          Kami sangat bersyukur atas kehadiran dan doa restu Anda. Bagi yang
+          ingin memberikan hadiah, berikut informasi transfer atau pengiriman:
+        </p>
+
+        <div class="gift-section">
+          <div class="bank-info">
+            <h3>Transfer Bank</h3>
+            <div class="rekening-container">
+              <p><strong>Nama Rekening:</strong>Sutriyadi Yusuf Sumarno</p>
+              <p><strong>Bank:</strong>BCA</p>
+              <p class="rekening" id="rekening1"><strong><mark>4780310605</mark></strong></p>
+              <button onclick="copyToClipboard('rekening1')">
+                Salin Nomor Rekening 1
+              </button>
+            </div>
+            <a href="https://wa.me/6289618766472">klik untuk chat</a>
+
+            <div class="rekening-container">
+              <p><strong>Nama Rekening:</strong>Isabella Kristin Br. Pinem</p>
+              <p><strong>Bank:</strong>BCA</p>
+              <p class="rekening" id="rekening2"><strong><mark>0613473588</mark></strong></p>
+              <button onclick="copyToClipboard('rekening2')">
+                Salin Nomor Rekening 2
+              </button>
+            </div>
+            <a href="https://wa.me/6287893753999">klik untuk chat</a>
+
+            <p id="successMessage" class="success" style="display: none">
+              Nomor rekening berhasil disalin!
+            </p>
+          </div>
+
+          <div class="address-info">
+            <h3>Pengiriman Hadiah</h3>
+            <p><strong>Alamat:</strong></p>
+            <p>
+              Jl. Bambu Raya No.06, Mangga, Kec. Medan Tuntungan, Kota Medan,
+              Sumatera Utara 20141
+            </p>
+            <p><strong>Telepon:</strong> Sutriyadi Yusuf</p>
+            <a href="https://wa.me/6289618766472">klik untuk chat</a>
+            <p><strong>Telepon:</strong> +62 896-1876-6472</p>
+            <p><strong>Telepon:</strong> Isabella Kristin</p>
+            <a href="https://wa.me/6287893753999">klik untuk chat</a>
+            <p><strong>Telepon:</strong> +62 878-9375-3999</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2024 Sutriyadi Yusuf & Keluarga. Semua Hak Dilindungi.</p>
+        <p>
+          Dibuat dengan ❤️ oleh
+          <a
+            href="https://www.instagram.com/adiefathan/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Adiefathan</a
+          >
+        </p>
+        <div class="social-links">
+          <a
+            href="https://www.tiktok.com/@adiefathan"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Tiktok</a
+          >
+          |
+          <a
+            href="https://www.threads.net/@adiefathan"
+            target="_blank"
+            rel="noopener noreferrer"
+            >threads</a
+          >
+          |
+          <a
+            href="https://www.youtube.com/channel/UCaAlzk0qm_714cYpl6e-j6Q"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Youtube</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    >
+      const form = document.getElementById('kehadiranForm');
+          const messagesDiv = document.getElementById('messages');
+
+          form.addEventListener('submit', function(event) {
+              event.preventDefault();
+
+              const nama = document.getElementById('nama').value.trim();
+              const pesan = document.getElementById('pesan').value.trim();
+              const kehadiran = document.getElementById('kehadiran').value;
+
+              if (nama && pesan && kehadiran) {
+                  const message = document.createElement('div');
+                  message.classList.add('message');
+                  message.innerHTML = `
+                      <p><strong>${nama}</strong> (${kehadiran})</p>
+                      <p>${pesan}</p>
+                  `;
+
+                  messagesDiv.prepend(message);
+
+                  // Reset form
+                  form.reset();
+              }
+          });
+    </script>
+    <script>
+      function copyToClipboard() {
+        // Ambil elemen teks
+        const rekening = document.getElementById("rekening").textContent;
+
+        // Buat elemen textarea sementara untuk menyalin teks
+        const tempInput = document.createElement("textarea");
+        tempInput.value = rekening;
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        document.execCommand("copy");
+        document.body.removeChild(tempInput);
+
+        // Tampilkan pesan sukses
+        const successMessage = document.getElementById("successMessage");
+        successMessage.style.display = "block";
+
+        // Sembunyikan pesan setelah beberapa detik
+        setTimeout(() => {
+          successMessage.style.display = "none";
+        }, 3000);
+      }
+    </script>
+
+    <script>
+      function copyToClipboard(rekeningId) {
+        // Ambil elemen teks berdasarkan ID
+        const rekening = document.getElementById(rekeningId).textContent;
+
+        // Buat elemen textarea sementara untuk menyalin teks
+        const tempInput = document.createElement("textarea");
+        tempInput.value = rekening;
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        document.execCommand("copy");
+        document.body.removeChild(tempInput);
+
+        // Tampilkan pesan sukses
+        const successMessage = document.getElementById("successMessage");
+        successMessage.style.display = "block";
+
+        // Sembunyikan pesan setelah beberapa detik
+        setTimeout(() => {
+          successMessage.style.display = "none";
+        }, 3000);
+      }
+    </script>
+    <script>
+      window.addEventListener("load", function() {
+  const form = document.getElementById('my-form');
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    const action = e.target.action;
+    fetch(action, {
+      method: 'POST',
+      body: data,
+    })
+    .then(() => {
+      alert("Success!");
+    })
+  });
+});
+    </script>
+
+<!-- <script>
+  const music = document.getElementById("bgMusic");
+
+  // Cek autoplay status
+  window.onload = function() {
+      // Browser modern mungkin memblokir autoplay
+      try {
+          music.play();
+      } catch (err) {
+          console.warn("Autoplay terblokir. Klik untuk memulai musik.");
+      }
+  };
+
+  // Putar musik saat pengguna klik di mana saja
+  document.addEventListener("click", function() {
+      if (music.paused) {
+          music.play();
+      }
+  });
+</script> -->
+  </body>
+</html>

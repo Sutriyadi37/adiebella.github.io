@@ -1,0 +1,72 @@
+:root {
+  --pink: #f14e95;
+  --bg: #0a0a0a;
+  --shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+body {
+  font-size: 1.5rem;
+  font-family: "Work Sans", serif;
+}
+
+.hero ::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/20241012_165345.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  /* background-color: #0a0a0a; */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero h1 {
+  font-family: "Sacramento", serif;
+  font-size: 3rem;
+  color: aqua;
+  letter-spacing: 0.3rem;
+}
+
+.hero h4 {
+  font-size: 2rem;
+  font-family: "Sour Gummy", serif;
+  color: red;
+}
+
+.hero {
+  font-family: "Roboto Condensed", serif;
+}
+
+.hero button {
+  color: crimson;
+  background-color: white;
+}
+
+.hero button:hover {
+  background-color: crimson;
+  color: white;
+}
+
+/* laptop */
+
+@media (max-width:992px){
+
+}
+
+/* tablet */
+@media (max-width:768px){
+    
+}
+/* mobile phone */
+@media (max-width:576px){
+    
+}
